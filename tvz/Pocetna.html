@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7700954c6a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <title>O fakultetu</title>
+</head>
+<body>
+    <header>
+        <nav id="gornji_dio_headera">
+            <figure>
+                <img src="tvz-znak-logo.svg" alt="Tehničko veleučilište Zagreb" id="logo">
+            </figure>
+            <div id="desniDioHeadera">
+                <div id="gornjiGumbi">
+                    <div style="cursor: pointer;"><i class="fa-solid fa-circle-half-stroke"></i></div>                 
+                    <div style="cursor: pointer;"><i class="fa-solid fa-language"></i></div>
+                    <div style="cursor: pointer;"><i class="fa-solid fa-user"></i></div>
+                </div>
+                <div id="searchBar">
+                    <input type="text" placeholder="Pretraga..." name="search" style="border-radius: 10px;">
+                    <button type="submit" style="border-radius: 5px;"><i class="fa fa-search"></i></button>
+                </div>
+                <ul>
+                    <li id="prvi">
+                        <button type="button">Upisi</button>
+                        <ul class="dropdown">
+                            <li><button>Vodić za brucoše</button></li>
+                            <li><button>Upis u više godine</button></li>
+                            <li><button>Upis na diplomske studije</button></li>
+                            <li><button>Promotivni sadržaji i tečajevi</button></li>
+                        </ul>
+                    </li>
+                    <li id="drugi">
+                        <button type="button">Studiji</button>
+                    </li>
+                    <li id="treci">
+                        <button type="button">Aktivnosti</button>
+                    </li>
+                    <li id="cetvrti">
+                        <button type="button">O fakultetu</button>  
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container" id="slider-slike">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="photos/1.jpg" /></div>
+                    <div class="swiper-slide"><img src="photos/2.jpg" /></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+        <button id="Arhiva">Arhiva</button>
+    </main>
+    <footer>
+        <a href="#">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="#">
+            <i class="fa-brands fa-facebook"></i>
+        </a>        
+        <a href="#">
+            <i class="fa-brands fa-discord"></i>
+        </a>
+    </footer>
+</body>
+</html>
