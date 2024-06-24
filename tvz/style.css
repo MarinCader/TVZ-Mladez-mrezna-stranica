@@ -30,7 +30,7 @@ nav img {
 
 #prvi > button, #drugi > button, #treci > button, #cetvrti > button {
     height: 40px;
-    width: 230px;
+    width: 200px;
     border-radius: 10px;
     background-color: blue;
 
@@ -47,7 +47,7 @@ nav img {
 
 #prvi:hover .dropdown {
     padding: 0px;
-    width: 230px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -175,4 +175,52 @@ footer a {
 
 footer i {
     color: white;
+    font-size: 35px;
+}
+@media all and (max-width: 1295px) {
+    #desniDioHeadera > ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+    #desniDioHeadera {
+        justify-content: center;
+    }
+    #gornji_dio_headera {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #prvi > button, #drugi > button, #treci > button, #cetvrti > button {
+        width: 100%;
+    }
+
+    #gornjiGumbi, #searchBar {
+        margin-right: 10px;
+    }
+
+    nav img {
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
+    nav figure {
+        flex-basis: 100%;
+        height: fit-content;
+    }
+    #desniDioHeadera{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 0px;
+        flex-basis: 100%;
+    }
+    #desniDioHeadera ul {
+        padding: 0px;
+    }
+    #slider-slike {
+        margin: 20px auto 30px auto;
+        padding: 0px;
+        box-sizing: border-box;
+        width: 100%;
+    }
 }
