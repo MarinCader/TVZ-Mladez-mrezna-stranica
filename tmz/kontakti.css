@@ -49,20 +49,15 @@ main{
     width: 80%;
 }
 article{
-    width: 35%;
+    width: 42%;
     text-align: center;
     align-items: center;
 }
-article img{
-    width: 100%;
-    background-color: white;
-}
-article a{
-    text-decoration: none;
-    color: black;
-}
-h3{
+h2{
     color: blue;
+}
+section{
+    width: 80%;
 }
 footer{
     background-color: blue;

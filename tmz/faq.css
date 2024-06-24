@@ -40,29 +40,21 @@ header{
     width: 45%;
 }
 main{
-    margin: 0 auto;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
     width: 80%;
+    margin: 0 auto;
+    text-align: left;
 }
-article{
-    width: 35%;
-    text-align: center;
-    align-items: center;
-}
-article img{
-    width: 100%;
-    background-color: white;
-}
-article a{
-    text-decoration: none;
-    color: black;
+h1{
+    padding: 20px 0px;
+    color: blue;
+
 }
 h3{
-    color: blue;
+    text-decoration: underline;
+}
+section{
+    background-color: whitesmoke;
+    padding: 20px 10px ;
 }
 footer{
     background-color: blue;
