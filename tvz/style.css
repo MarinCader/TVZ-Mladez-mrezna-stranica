@@ -24,7 +24,9 @@ nav img {
 }
 
 #prvi > button:hover, #drugi > button:hover, #treci > button:hover,
-#cetvrti > button:hover, #prvi:hover .dropdown button:hover, #Arhiva:hover{
+#cetvrti > button:hover, #prvi:hover .dropdown button:hover,
+#drugi:hover .dropdown button:hover, #treci:hover .dropdown button:hover,
+#cetvrti:hover .dropdown button:hover, #Arhiva:hover{
     background-color: rgb(76, 76, 226);
 }
 
@@ -45,7 +47,7 @@ nav img {
     z-index: 2;
 }
 
-#prvi:hover .dropdown {
+#prvi:hover .dropdown, #drugi:hover .dropdown, #treci:hover .dropdown, #cetvrti:hover .dropdown {
     padding: 0px;
     width: 200px;
     display: flex;
@@ -54,16 +56,18 @@ nav img {
     justify-content: stretch;
 }
 
-#prvi:hover .dropdown button {
+#prvi:hover .dropdown button, #drugi:hover .dropdown button, #treci:hover .dropdown button,
+#cetvrti:hover .dropdown button {
     width: 100%;
     height: 30px;
-    background-color: blue;
+    background-color: rgb(108, 108, 255);
     color: white;
     border-radius: 5px;
     font-weight: bold;
 }
 
-#prvi:hover .dropdown li {
+#prvi:hover .dropdown li, #drugi:hover .dropdown li, #treci:hover .dropdown li,
+#cetvrti:hover .dropdown li {
     flex-basis: 100%;
 }
 
